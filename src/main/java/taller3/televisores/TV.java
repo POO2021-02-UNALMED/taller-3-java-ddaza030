@@ -31,7 +31,7 @@ public class TV {
 		return control;
 	}
 	public void setVolumen(int i) {
-		if(i>=0 && i<=7) {
+		if(i>=0 && i<=7 && estado == true) {
 			volumen = i;
 		}
 	}
@@ -39,7 +39,7 @@ public class TV {
 		return volumen;
 	}
 	public void setCanal(int i) {
-		if(i>=1 && i<=120) {
+		if(i>=1 && i<=120 && estado == true) {
 			canal = i;
 		}
 	}
